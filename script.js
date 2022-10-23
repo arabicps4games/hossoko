@@ -211,16 +211,16 @@ const QuickNav = () => {
     const getItems = () => {
         return [{
                 id: 1,
-                label: "Weather"
+                label: "Series"
             }, {
                 id: 2,
-                label: "Food"
+                label: "Documentary"
             }, {
                 id: 3,
-                label: "Apps"
+                label: "Movies"
             }, {
                 id: 4,
-                label: "Movies"
+                label: "Apps & Games"
             }].map((item) => {
             return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
                 React.createElement("span", { className: "quick-nav-item-label" }, item.label)));
@@ -345,25 +345,25 @@ const Tools = () => {
 const Restaurants = () => {
     const getRestaurants = () => {
         return [{
-                desc: "The best burgers in town",
+                desc: "2022 ‧ 1h 54m",
                 id: 1,
-                image: "https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Burgers"
+                image: "https://deadline.com/wp-content/uploads/2022/08/Tinder-Swindler_Main_Horizontal_RGB_PRE-e1660225625603.jpg?crop=351px%2C18px%2C649px%2C364px&resize=681%2C383?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                title: "The Tinder Swindler"
             }, {
-                desc: "The worst ice-cream around",
+                desc: "2022 ‧ 1h 37m",
                 id: 2,
-                image: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Ice Cream"
+                image: "https://m.media-amazon.com/images/M/MV5BM2ZjYzI3MWItODYxYS00ZmNmLWEyN2YtNDQ1NjhjNTcwYzc4XkEyXkFqcGdeQXVyMjY5ODI4NDk@._V1_FMjpg_UX1000_.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                title: "Our Father"
             }, {
-                desc: "This 'Za be gettin down",
+                desc: "2020 ‧ 1h 34m",
                 id: 3,
-                image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Pizza"
+                image: "https://www.minterdial.com/wp-content/uploads/2020/09/SocialDilemma-PosterX.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                title: "The Social Dilemma"
             }, {
-                desc: "BBQ ain't need no rhyme",
+                desc: "2021 ‧ 1h 38m",
                 id: 4,
-                image: "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFyYmVxdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "BBQ"
+                image: "https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRSm5xCaaBZRU16Bl-Id-0mRr9n9OWYkO96yUmKDk17xHSFhk-FQxC5fG2WPpXflPIO_CFQMUqXl6stozGPh4XpLPHT1B0eIzKI8CuR3REFUhVOe7WE9EYI2L14VRMZv-3CRDg.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmFyYmVxdWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                title: "Found"
             }].map((restaurant) => {
             const styles = {
                 backgroundImage: `url(${restaurant.image})`
@@ -375,34 +375,34 @@ const Restaurants = () => {
                         React.createElement("span", { className: "restaurant-card-desc" }, restaurant.desc)))));
         });
     };
-    return (React.createElement(MenuSection, { icon: "fa-regular fa-pot-food", id: "restaurants-section", title: "Get it delivered!" }, getRestaurants()));
+    return (React.createElement(MenuSection, { icon: "fa-regular fa-film", id: "restaurants-section", title: "Check Our Top Documentary" }, getRestaurants()));
 };
 const Movies = () => {
     const getMovies = () => {
         return [{
-                desc: "A tale of some people watching over a large portion of space.",
+                desc: "Check Here Our Top Series",
                 id: 1,
                 icon: "fa-solid fa-galaxy",
-                image: "https://images.unsplash.com/photo-1596727147705-61a532a659bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Protectors of the Milky Way"
+                image: "https://pics.filmaffinity.com/House_M_D_TV_Series-355236072-large.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                title: "Top Series"
             }, {
-                desc: "Some people leave their holes to disrupt some things.",
+                desc: "Check Here Our New Series",
                 id: 2,
                 icon: "fa-solid fa-hat-wizard",
-                image: "https://images.unsplash.com/photo-1535666669445-e8c15cd2e7d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9yZCUyMG9mJTIwdGhlJTIwcmluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Hole People"
+                image: "https://kiddaan.com/wp-content/uploads/2022/06/squid-game2.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9yZCUyMG9mJTIwdGhlJTIwcmluZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                title: "New Series"
             }, {
-                desc: "A boy with a dent in his head tries to stop a bad guy. And by bad I mean bad at winning.",
+                desc: "Check Here Our Top Movies",
                 id: 3,
                 icon: "fa-solid fa-broom-ball",
-                image: "https://images.unsplash.com/photo-1632266484284-a11d9e3a460a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Pot of Hair"
+                image: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                title: "Top Movies"
             }, {
-                desc: "A long drawn out story of some people fighting over some space. Cuz there isn't enough of it.",
+                desc: "Check Here Our New Movies",
                 id: 4,
                 icon: "fa-solid fa-starship-freighter",
-                image: "https://images.unsplash.com/photo-1533613220915-609f661a6fe1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMHdhcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-                title: "Area Fights"
+                image: "https://pics.filmaffinity.com/Top_Gun_Maverick-733802541-large.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMHdhcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                title: "New Movies"
             }].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
